@@ -175,7 +175,7 @@ elseif( 'closed' == $status ): ?>
 /** Reply History popup */
 ?>
 <div class="wpas-reply-history-lightbox pop">
-	<div class="icon-remove-sign"><a href="#"><?php _e('CLOSE', 'wpas'); ?></a></div>
+	<div class="icon-remove-sign"><a href="#"><?php _e('', 'wpas'); ?></a></div>
 	<div class="wpas-reply-history-wrapper">
 		<div class="wpas-reply-notification"></div>
 		<div class="wpas-reply-history-table">
