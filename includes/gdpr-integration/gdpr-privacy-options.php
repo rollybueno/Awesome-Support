@@ -208,6 +208,18 @@ class WPAS_Privacy_Option {
 								}
 								$value = '';
 							break;
+							case 'ticket_meta':
+								if( !empty( $value ) && is_array( $value ) ){
+									$name = __( 'Meta Content', 'awesome-support' );
+									if ( ! empty( $value ) ) {
+										$user_data_to_export[] = array(
+											'name'  => $name,
+											'value' => json_encode( $value ),
+										);
+									}
+								}
+								$value = '';
+							break;
 							case 'ticket_status':
 								$name = __( 'Ticket Status', 'awesome-support' );
 							break;
