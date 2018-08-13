@@ -217,7 +217,7 @@ function wpas_register_assets_back_end() {
 	));
 
 	// Edit ticket content!
-	wp_enqueue_editor();
+	//wp_enqueue_editor();
 	wp_enqueue_script( 'wpas-admin-edit-ticket-content-script', WPAS_URL . 'assets/admin/js/admin-edit-ticket-content.js', array( 'jquery' ), WPAS_VERSION );
 	wp_localize_script( 'wpas-admin-edit-ticket-content-script', 'WPAS_Edit_Ticket_Content', array(
 		'ajax_url' => admin_url( 'admin-ajax.php' )
@@ -264,7 +264,7 @@ function wpas_assets_front_end() {
 		}
 
 		// GDPR Privacy options script and style.
-		wp_enqueue_editor();
+		//wp_enqueue_editor();
 		wp_register_script( 'wpas-gdpr-script', WPAS_URL . 'assets/public/js/component-privacy-popup.js', array( 'jquery' ), WPAS_VERSION );		
 		wp_localize_script( 'wpas-gdpr-script', 'WPAS_GDPR', array(
 			'ajax_url' => admin_url( 'admin-ajax.php' ),

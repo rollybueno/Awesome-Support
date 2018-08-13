@@ -300,3 +300,11 @@
 		height: 5em;
 	}
 }
+
+.wpas_table_pagination>li.active {
+	display: inline !important;
+}
+
+.wpas_table_pagination {
+	width: 100%;
+}
