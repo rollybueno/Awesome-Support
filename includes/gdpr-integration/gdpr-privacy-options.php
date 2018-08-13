@@ -103,8 +103,8 @@ class WPAS_Privacy_Option {
 				
 			case 'add_user_consent':
 
-				$_status = (isset( $_GET['_status'] ) && !empty( isset( $_GET['_status'] ) ))? sanitize_text_field( $_GET['_status'] ): '';
-				$consent = ( isset( $_GET['_consent'] ) && !empty( isset( $_GET['_consent'] ) ) )? sanitize_text_field( $_GET['_consent'] ): '';
+				$_status = ( isset( $_GET['_status'] ) && !empty( $_GET['_status'] ))? sanitize_text_field( $_GET['_status'] ): '';
+				$consent = ( isset( $_GET['_consent'] ) && !empty( $_GET['_consent'] ) )? sanitize_text_field( $_GET['_consent'] ): '';
 				if( empty( $_status ) || empty( $consent ) ){
 					return false;
 				}
